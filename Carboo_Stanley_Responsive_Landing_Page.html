@@ -16,52 +16,88 @@
             text-align: center;
             background: #007BFF;
             color: white;
-            padding: 50px 20px;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
         .cta-button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             background: #ff9800;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.1rem;
         }
         main {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            padding: 40px 20px;
+            padding: 50px 20px;
             background: #f4f4f4;
             justify-content: center;
         }
         article {
             background: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+        }
+        article h2 {
+            margin-bottom: 10px;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             margin-top: 20px;
         }
         footer a {
             color: #ff9800;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #ff9800;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 20px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Empowering You with Digital Solutions</h1>
-            <p>SEC Computer Agency offers expert IT consultancy, training, and digital solutions to help you succeed in the digital world.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
+        <h1>Empowering You with Digital Solutions</h1>
+        <p>SEC Computer Agency offers expert IT consultancy, training, and digital solutions to help you succeed in the digital world.</p>
+        <a href="#" class="cta-button">Learn More</a>
     </header>
     
     <main>
@@ -81,7 +117,11 @@
     
     <footer>
         <p>Contact us: <a href="mailto:sec3421@gmail.com">sec3421@gmail.com</a> | Tel: 08133471994</p>
-        <p>Follow us on Facebook: <a href="https://facebook.com/sec342" target="_blank">facebook.com/sec342</a></p>
+        <div class="social-icons">
+            <a href="https://facebook.com/sec342" target="_blank">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
